@@ -59,26 +59,25 @@
 1. 打开你 Fork 后的 GitHub 仓库，进入 `Actions`。
 
 ![进入Actions](images/step-07-action.png)
+![进入Actions](images/step-08-action.png)
+![进入Actions](images/step-09-action.png)
 
 2. 点击 "I understand my workflows, go ahead and enable them"。
 
-![启用工作流](images/step-08-action.png)
+![启用工作流](images/step-10-action.png)
 
 3. 点击 "New workflow"。
 
-![新建工作流](images/step-09-action.png)
+![新建工作流](images/step-11-action.png)
 
 4. 点击 "set up a workflow yourself"。
 
-![设置工作流](images/step-10-action.png)
+![设置工作流](images/step-12-action.png)
 
 5. 将文件名改为 `sync_fork.yml`。
-
-![修改文件名](images/step-11-action.png)
-
 6. 在编辑器中粘贴以下内容后保存提交（Commit changes...）：
 
-![粘贴内容](images/step-12-action.png)
+![粘贴内容](images/step-13-action.png)
 
 ```yaml
 name: Fork Sync
@@ -129,11 +128,7 @@ jobs:
 
 7. 回到 `Actions`，选择你刚创建的 `Fork Sync` 工作流，点击 "Run workflow" 验证是否成功。
 
-![运行工作流1](images/step-13-action.png)
-
-![运行工作流2](images/step-14-action.png)
-
-![验证成功](images/step-15-action.png)
+![运行工作流](images/step-14-action.png)
 
 8. 若成功，每日将自动同步上游更新；同步后 Vercel 会基于你 Fork 的仓库自动重新部署。
 
@@ -144,6 +139,8 @@ jobs:
 1. 打开 `Actions`。
 2. 选择名为 “Build and Push Docker Image to Docker Hub” 的工作流。
 3. 点击页面右上角 “···” 菜单，选择 “Disable workflow”。
+
+![禁用原作者工作流](images/step-15-action.png)
 
 ---
 
