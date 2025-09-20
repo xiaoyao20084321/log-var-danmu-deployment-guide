@@ -1,4 +1,4 @@
-## huangxd_danmu_api 在 Vercel 的部署指南（含 Fork 自动同步， 让自己的弹幕api实时的同步作者的代码）
+## danmu_api 在 vercel 的部署指南（含 Fork 自动同步， 让自己的弹幕api实时的同步作者的代码）
 
 本仓库为仅针对 Vercel 的部署教程，指导你从 Fork 原仓库到 Vercel 部署，并配置 GitHub Actions 定时同步上游更新，让 Vercel 自动重新部署。
 
