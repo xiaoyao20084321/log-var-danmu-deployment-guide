@@ -31,9 +31,9 @@
 
 ### 二、登录 Vercel 并导入项目
 1. 打开 Vercel 登录页：[`https://vercel.com/login`](https://vercel.com/login)，使用 GitHub 账号登录。
-2. 在 Vercel 仪表盘选择 Import Project（导入项目）。
-3. 选择你刚 Fork 的仓库（通常名为 `danmu_api`）。
-4. 一路默认配置即可完成部署。部署完成后将得到形如 `https://{your_project}.vercel.app` 的访问地址。
+2. 在 Vercel 仪表盘选择 Add New Project（新增项目）。
+3. 导入你刚 Fork 的仓库（通常名为 `danmu_api`）。
+4. 点击Deploy按钮即可完成部署。部署完成后将得到形如 `https://{your_project}.vercel.app` 的访问地址。
 
 ---
 
