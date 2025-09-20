@@ -1,4 +1,4 @@
-## huangxd_danmu_api 在 Vercel 的部署指南（含 Fork 自动同步）
+## huangxd_danmu_api 在 Vercel 的部署指南（含 Fork 自动同步， 让自己的弹幕api实时的同步作者的代码）
 
 本仓库为仅针对 Vercel 的部署教程，指导你从 Fork 原仓库到 Vercel 部署，并配置 GitHub Actions 定时同步上游更新，让 Vercel 自动重新部署。
 
@@ -11,7 +11,6 @@
 - 部署到 Vercel（通过 Fork 的仓库）
 - 配置 Fork 自动同步（GitHub Actions）
 - 可选：禁用上游用于 Docker 的 Workflow
-- 截图与文件放置规范
 - 常见问题（FAQ）
 
 ---
@@ -35,11 +34,6 @@
 2. 在 Vercel 仪表盘选择 Import Project（导入项目）。
 3. 选择你刚 Fork 的仓库（通常名为 `danmu_api`）。
 4. 一路默认配置即可完成部署。部署完成后将得到形如 `https://{your_project}.vercel.app` 的访问地址。
-5. 在 Vercel 项目 Settings -> Environment Variables 中添加环境变量：
-   - `TOKEN`：你的 API 令牌值（如不设置，默认值为 `87654321`）。
-6. 保存后重新部署。
-
-> 性能优化：Settings -> Functions -> Advanced Settings -> Function Region 建议选择 Hong Kong 或新加坡等就近区域。
 
 ---
 
@@ -105,7 +99,7 @@ jobs:
 
 ---
 
-### 四、可选：禁用上游用于 Docker 的 Workflow
+### 四、可选：禁用原作者用于 Docker 的 Workflow（不做这一步，可能邮箱中会收到报错提示，但不影响弹幕api）
 上游有用于自动构建 Docker Hub 镜像的工作流；若你不需要，可在你的 Fork 中禁用：
 1. 打开 `Actions`。
 2. 选择名为 “Build and Push Docker Image to Docker Hub” 的工作流。
@@ -113,22 +107,8 @@ jobs:
 
 ---
 
-### 五、截图与文件放置规范
-- 在本仓库根目录新建 `images/` 文件夹，用于存放所有步骤截图。
-- 建议文件命名：`step-01-fork.png`、`step-02-vercel-login.png`、`step-03-vercel-import.png`、`step-04-actions.png`、`step-05-enable-workflows.png`、`step-06-new-workflow.png`、`step-07-setup-yourself.png`、`step-08-sync-fork-yml.png`、`step-09-commit.png`、`step-10-run-workflow.png`、`step-11-disable-docker-workflow.png`。
-- 在文档中引用示例：
-
-```markdown
-![Fork 仓库](./images/step-01-fork.png)
-```
-
----
-
 ### 常见问题（FAQ）
-- Vercel 环境变量 `TOKEN` 未设置：默认使用 `87654321`。若需自定义，请在 Settings -> Environment Variables 添加并重新部署。
 - 同步失败（Actions 红叉）：查看 Actions 日志，可能是上游变更、合并冲突或网络问题；必要时手动合并一次。
-- 访问地区慢：尝试在 Vercel Functions 区域选择 Hong Kong 或新加坡。
-
 ---
 
 ### 参考
