@@ -58,9 +58,18 @@
 
 ![导入仓库](images/step-05-vercel-import.png)
 
-4. 点击Deploy按钮即可完成部署。部署完成后将得到形如 `https://{your_project}.vercel.app` 的访问地址。
+4. 点击Deploy按钮即可完成部署。
 
 ![部署按钮](images/step-06-vercel-deploy.png)
+
+5. 部署完成后将得到形如 `https://{your_project}.vercel.app` 的访问地址。
+
+![访问地址](images/step-06-01-vercel-deploy.png)
+
+6. 将这个https://{your_project}.vercel.app/87654321填入到sen、小幻等App中，其中87654321是你按照我这个教程后得到的默认token，如果你以后有修改token（你想修改成什么就修改成什么），将其修改为你修改后的值在填入sen等App中（图片示例为sen）
+> 注意：小幻在填写API的时候需要在API后面加上`/api/v2`，如`https://{your_project}.vercel.app/87654321/api/v2`
+
+![App截图](images/step-06-02-vercel-deploy.png)
 
 ---
 
