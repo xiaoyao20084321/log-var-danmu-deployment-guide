@@ -121,7 +121,8 @@
    - 点击 "Sync fork" 按钮即可手动同步最新代码
    - 同步完成后，Vercel 会自动重新部署你的服务
 
-![手动同步Fork](images/step-16-action.png)
+![手动同步Fork](images/step-16-01-action.png)
+![手动同步Fork](images/step-16-02-action.png)
 
 #### 🎉 恭喜！自动同步已配置完成
 
