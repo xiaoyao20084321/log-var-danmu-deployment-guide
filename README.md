@@ -74,8 +74,6 @@
 
 6. 将这个 https://{your_project}.vercel.app/87654321 填入到 sen、小幻等 App 中。
    > 注意：其中 87654321 是你按照我这个教程后得到的默认 token，如果你以后有修改 token（你想修改成什么就修改成什么），将其修改为你修改后的值在填入 sen 等 App 中（图片示例为 sen），**如果你没有改的需求， 直接使用 87654321 就行（大部分人都没有这个需求）**
-   >
-   > 注意：小幻在填写 API 的时候需要在 API 后面加上`/api/v2`，如`https://{your_project}.vercel.app/87654321/api/v2`
 
 ![App截图](images/step-06-02-vercel-deploy.png)
 
